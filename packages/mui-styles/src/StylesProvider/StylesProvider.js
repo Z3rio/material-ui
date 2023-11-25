@@ -103,7 +103,7 @@ export default function StylesProvider(props) {
     sheetsRegistry,
   ]);
 
-  return <StylesContext.Provider value={value}>{children}</StylesContext.Provider>;
+  return React.createElement(StylesContext.Provider, { value }, children);
 }
 
 StylesProvider.propTypes = {

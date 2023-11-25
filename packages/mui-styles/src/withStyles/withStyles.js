@@ -71,7 +71,7 @@ const withStyles =
         }
       }
 
-      return <Component ref={ref} classes={classes} {...more} />;
+      return React.createElement(Component, { ref, classes, ...more }, null);
     });
 
     WithStyles.propTypes = {

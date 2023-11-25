@@ -20,7 +20,7 @@ export function withThemeCreator(options = {}) {
 
     const WithTheme = React.forwardRef(function WithTheme(props, ref) {
       const theme = useTheme() || defaultTheme;
-      return <Component theme={theme} ref={ref} {...props} />;
+      return React.createElement(Component, { theme, ref, ...props }, null);
     });
 
     if (process.env.NODE_ENV !== 'production') {

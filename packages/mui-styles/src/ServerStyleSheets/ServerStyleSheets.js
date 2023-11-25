@@ -16,15 +16,15 @@ export default class ServerStyleSheets {
     // A new class name generator
     const generateClassName = createGenerateClassName();
 
-    return (
-      <StylesProvider
-        sheetsManager={sheetsManager}
-        serverGenerateClassName={generateClassName}
-        sheetsRegistry={this.sheetsRegistry}
-        {...this.options}
-      >
-        {children}
-      </StylesProvider>
+    return React.createElement(
+      StylesProvider,
+      {
+        sheetsManager,
+        serverGenerateClassName: generateClassName,
+        sheetsRegistry: this.sheetsRegistry,
+        ...this.options,
+      },
+      children,
     );
   }
 

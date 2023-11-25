@@ -100,10 +100,14 @@ export default function styled(Component) {
 
       const FinalComponent = ComponentProp || Component;
 
-      return (
-        <FinalComponent ref={ref} className={className} {...spread}>
-          {children}
-        </FinalComponent>
+      return React.createElement(
+        FinalComponent,
+        {
+          ref,
+          className,
+          ...spread,
+        },
+        children,
       );
     });
 
