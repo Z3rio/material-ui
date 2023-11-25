@@ -71,7 +71,6 @@ const withStyles =
         }
       }
 
-      // eslint-disable-next-line react/jsx-filename-extension
       return <Component ref={ref} classes={classes} {...more} />;
     });
 

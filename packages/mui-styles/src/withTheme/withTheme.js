@@ -20,7 +20,6 @@ export function withThemeCreator(options = {}) {
 
     const WithTheme = React.forwardRef(function WithTheme(props, ref) {
       const theme = useTheme() || defaultTheme;
-      // eslint-disable-next-line react/jsx-filename-extension
       return <Component theme={theme} ref={ref} {...props} />;
     });
 

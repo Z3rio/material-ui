@@ -103,7 +103,6 @@ export default function StylesProvider(props) {
     sheetsRegistry,
   ]);
 
-  // eslint-disable-next-line react/jsx-filename-extension
   return <StylesContext.Provider value={value}>{children}</StylesContext.Provider>;
 }
 

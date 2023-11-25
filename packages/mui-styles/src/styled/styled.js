@@ -101,7 +101,6 @@ export default function styled(Component) {
       const FinalComponent = ComponentProp || Component;
 
       return (
-        // eslint-disable-next-line react/jsx-filename-extension
         <FinalComponent ref={ref} className={className} {...spread}>
           {children}
         </FinalComponent>
