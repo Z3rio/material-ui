@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import { createRenderer } from '@mui-internal/test-utils';
 import * as material from '@mui/material/styles';
 import * as joy from '@mui/joy/styles';
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from '..';
 
 describe('Theme scoping', () => {
   const { render } = createRenderer();

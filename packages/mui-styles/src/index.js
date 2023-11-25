@@ -1,18 +1,19 @@
 /* eslint-disable import/export */
 import { ponyfillGlobal } from '@mui/utils';
 
-/* Warning if there are several instances of @mui/styles */
+/* Warning if there are several instances of @zerio2/mui_styles */
 if (
   process.env.NODE_ENV !== 'production' &&
   process.env.NODE_ENV !== 'test' &&
   typeof window !== 'undefined'
 ) {
-  ponyfillGlobal['__@mui/styles-init__'] = ponyfillGlobal['__@mui/styles-init__'] || 0;
+  ponyfillGlobal['__@zerio2/mui_styles-init__'] =
+    ponyfillGlobal['__@zerio2/mui_styles-init__'] || 0;
 
-  if (ponyfillGlobal['__@mui/styles-init__'] === 1) {
+  if (ponyfillGlobal['__@zerio2/mui_styles-init__'] === 1) {
     console.warn(
       [
-        'It looks like there are several instances of `@mui/styles` initialized in this application.',
+        'It looks like there are several instances of `@zerio2/mui_styles` initialized in this application.',
         'This may cause theme propagation issues, broken class names, ' +
           'specificity issues, and makes your application bigger without a good reason.',
         '',
@@ -21,7 +22,7 @@ if (
     );
   }
 
-  ponyfillGlobal['__@mui/styles-init__'] += 1;
+  ponyfillGlobal['__@zerio2/mui_styles-init__'] += 1;
 }
 
 export { default as createGenerateClassName } from './createGenerateClassName';

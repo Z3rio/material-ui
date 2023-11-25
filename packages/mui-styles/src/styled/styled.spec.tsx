@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { styled, StyledProps } from '@mui/styles';
+import { styled, StyledProps } from '..';
 
 function themeTest() {
   const style = (props: { value: number }) => ({});

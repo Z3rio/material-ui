@@ -1,4 +1,4 @@
-import { getThemeProps, useTheme } from '@mui/styles';
+import { getThemeProps, useTheme } from '..';
 
 interface ButtonProps {
   color: 'blue' | 'red';

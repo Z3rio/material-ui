@@ -12,7 +12,7 @@ import {
   CSSProperties,
   CreateCSSProperties,
   PropsFunc,
-} from '@mui/styles';
+} from '..';
 
 // Example 1
 const simpleStyles = ({ palette, spacing }: Theme) => ({

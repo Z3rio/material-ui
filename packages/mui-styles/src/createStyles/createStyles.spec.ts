@@ -1,4 +1,4 @@
-import { createStyles } from '@mui/styles';
+import { createStyles } from '..';
 
 {
   // Missing types for @font-face

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Theme } from '@mui/material';
 import { AppBarProps } from '@mui/material/AppBar';
-import { createStyles, makeStyles } from '@mui/styles';
+import { createStyles, makeStyles } from '..';
 
 // makeStyles
 {

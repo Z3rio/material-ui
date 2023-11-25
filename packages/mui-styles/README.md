@@ -1,4 +1,4 @@
-# @mui/styles
+# @zerio2/mui_styles
 
 You can leverage our styling solution, even if you are not using our components.
 
@@ -7,7 +7,7 @@ You can leverage our styling solution, even if you are not using our components.
 Install the package in your project directory with:
 
 ```bash
-npm install @mui/styles
+npm install @zerio2/mui_styles
 ```
 
 ## Documentation
